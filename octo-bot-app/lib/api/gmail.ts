@@ -9,6 +9,7 @@
  */
 
 import * as WebBrowser from 'expo-web-browser';
+import { FunctionsHttpError } from '@supabase/supabase-js';
 import { supabase } from '../supabase';
 import type {
   GmailConnectionStatus,
@@ -95,8 +96,16 @@ export async function connectGmail(): Promise<void> {
   );
 
   if (error) {
-    // Try to parse error response
-    const errorBody = error.context as ConnectGmailError | undefined;
+    // Parse error response body for FunctionsHttpError
+    let errorBody: ConnectGmailError | undefined;
+
+    if (error instanceof FunctionsHttpError && error.context instanceof Response) {
+      try {
+        errorBody = await error.context.json();
+      } catch {
+        // Response body not parseable — fall through to generic error
+      }
+    }
 
     if (errorBody?.error === 'already_connected') {
       throw new GmailApiError(

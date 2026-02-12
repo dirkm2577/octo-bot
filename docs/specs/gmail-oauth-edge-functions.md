@@ -326,7 +326,7 @@ interface GmailConnectionStatus {
   gmail_email: string | null;
 }
 
-// Functions the Implementation Agent must provide:
+// Functions the Implementation Agent/Claude Code must provide:
 // 
 // connectGmail(): Promise<void>
 //   - Calls GET /functions/v1/connect-gmail with auth header

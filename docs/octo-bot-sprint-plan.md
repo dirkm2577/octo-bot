@@ -54,21 +54,21 @@ All accounts created, credentials obtained, development environment ready.
 ### Tasks
 
 #### Google Cloud Setup
-- [ ] Create Google Cloud project (`octo-bot-prod`)
-- [ ] Enable Gmail API
-- [ ] Configure OAuth consent screen
+- [X] Create Google Cloud project (`octo-bot-prod`)
+- [X] Enable Gmail API
+- [X] Configure OAuth consent screen
   - App name: octo-bot
   - Support email: support@octo-bot.io
   - Scopes: `gmail.readonly`, `gmail.metadata`
-- [ ] Create OAuth 2.0 credentials (Web application type)
-  - Authorized redirect URI: `https://octo-bot.io/auth/gmail/callback` (or Supabase URL for now)
-- [ ] Note down: Client ID, Client Secret
+- [X] Create OAuth 2.0 credentials (Web application type)
+  - Authorized redirect URI: `https://mveuucwrqpbxoihjdsus.supabase.co/auth/gmail/callback` (or Supabase URL for now)
+- [X] Note down: Client ID, Client Secret
 
 #### Supabase Setup
-- [ ] Create Supabase account (if needed)
-- [ ] Create project (`octo-bot-prod`)
-- [ ] Note down: Project URL, Anon Key, Service Role Key
-- [ ] Enable Email auth provider
+- [X] Create Supabase account (if needed)
+- [X] Create project (`octo-bot-prod`)
+- [X] Note down: Project URL, Anon Key, Service Role Key
+- [X] Enable Email auth provider
 
 #### Apple Developer Setup
 - [ ] Enroll in Apple Developer Program ($99)
@@ -77,28 +77,28 @@ All accounts created, credentials obtained, development environment ready.
 - [ ] Generate APNs key (for Expo)
 
 #### Expo Setup
-- [ ] Create Expo account
-- [ ] Install Expo CLI: `npm install -g expo-cli eas-cli`
-- [ ] Login: `eas login`
+- [X] Create Expo account
+- [X] Install Expo CLI: `npm install -g expo-cli eas-cli`
+- [X] Login: `eas login`
 - [ ] Configure push notification credentials in Expo dashboard
 
 #### Domain Setup
 - [ ] Verify DNS is configured for octo-bot.io
-- [ ] (Optional) Set up simple landing page or "coming soon"
-- [ ] Ensure support@octo-bot.io is receiving mail
+- [X] (Optional) Set up simple landing page or "coming soon"
+- [X] Ensure support@octo-bot.io is receiving mail
 
 #### Development Environment
-- [ ] Create GitHub repository (`octo-bot-app`)
-- [ ] Initialize Expo project: `npx create-expo-app octo-bot-app`
-- [ ] Install core dependencies
-- [ ] Create `.env` file structure (don't commit secrets!)
-- [ ] Verify Expo Go app installed on your iPhone
+- [X] Create GitHub repository (`octo-bot-app`)
+- [X] Initialize Expo project: `npx create-expo-app octo-bot-app`
+- [X] Install core dependencies
+- [X] Create `.env` file structure (don't commit secrets!)
+- [X] Verify Expo Go app installed on your iPhone
 
 ### Definition of Done
-- [ ] Can log into all services (Google Cloud, Supabase, Apple Developer, Expo)
-- [ ] Have all API keys/credentials documented securely
-- [ ] Empty Expo app runs on your phone via Expo Go
-- [ ] GitHub repo created with initial commit
+- [X] Can log into all services (Google Cloud, Supabase, Apple Developer, Expo)
+- [X] Have all API keys/credentials documented securely
+- [X] Empty Expo app runs on your phone via Expo Go
+- [X] GitHub repo created with initial commit
 
 ### Credentials Checklist
 ```
@@ -131,20 +131,20 @@ Emails arriving in Gmail automatically create Tracked Events in Supabase.
 ### Week 1: Database Foundation
 
 #### Database Schema
-- [ ] Create `events` table (copy from Technical Architecture doc)
-- [ ] Create `status_logs` table
-- [ ] Create `gmail_tokens` table
-- [ ] Create `push_tokens` table
-- [ ] Set up Row Level Security policies
-- [ ] Create `update_event_status` function
-- [ ] Create `get_active_events` function
-- [ ] Test queries in Supabase SQL editor
+- [X] Create `events` table (copy from Technical Architecture doc)
+- [X] Create `status_logs` table
+- [X] Create `gmail_tokens` table
+- [X] Create `push_tokens` table
+- [X] Set up Row Level Security policies
+- [X] Create `update_event_status` function
+- [X] Create `get_active_events` function
+- [X] Test queries in Supabase SQL editor
 
 #### Supabase Edge Function: Gmail OAuth
-- [ ] Create `connect-gmail` function (generates OAuth URL)
-- [ ] Create `gmail-callback` function (exchanges code for tokens)
-- [ ] Test OAuth flow manually (browser-based for now)
-- [ ] Verify tokens stored in `gmail_tokens` table
+- [X] Create `connect-gmail` function (generates OAuth URL)
+- [X] Create `gmail-callback` function (exchanges code for tokens)
+- [X] Test OAuth flow manually (browser-based for now)
+- [X] Verify tokens stored in `gmail_tokens` table
 
 ### Week 2: n8n Gmail Pipeline
 
