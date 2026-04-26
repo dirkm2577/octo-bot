@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>AI Workflow Risk Scorecard | OctoBot Labs</title>
+    <meta name="description" content="Score your AI agents and automations across credentials, permissions, approvals, logging, and recovery.">
+    <meta property="og:title" content="AI Workflow Risk Scorecard | OctoBot Labs">
+    <meta property="og:description" content="A practical 3-minute risk score for AI agents, MCP servers, and automation workflows.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="./assets/agent-risk-map.svg">
+    <meta name="theme-color" content="#172422">
+    <link rel="icon" href="./assets/octobot-mark.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="./styles.css">
+  </head>
+  <body class="scorecard-body">
+    <header class="site-header" aria-label="Primary">
+      <div class="header-shell">
+        <a class="brand" href="./index.html" aria-label="OctoBot Labs home">
+          <img class="brand-mark" src="./assets/octobot-mark.svg" alt="" width="38" height="38">
+          <span>OctoBot Labs</span>
+        </a>
+        <nav class="nav-links" aria-label="Main navigation">
+          <a href="./scorecard.html">Scorecard</a>
+          <a href="./index.html#deliverables">Deliverables</a>
+          <a href="./index.html#pricing">Pricing</a>
+          <a href="./index.html#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="scorecard-page">
+      <section class="scorecard-hero" aria-labelledby="scorecard-title">
+        <div class="scorecard-intro">
+          <p class="eyebrow">3-minute self-assessment</p>
+          <h1 id="scorecard-title">AI Workflow Risk Scorecard</h1>
+          <p>
+            Find out whether your agents, MCP servers, or automation workflows are ready to touch real credentials, tools, and customer data.
+          </p>
+        </div>
+        <aside class="scorecard-summary" aria-label="What the scorecard checks">
+          <h2>What it checks</h2>
+          <ul>
+            <li>Credential and secret exposure</li>
+            <li>Tool permissions and write access</li>
+            <li>Human approval gates</li>
+            <li>Audit trail and incident recovery</li>
+          </ul>
+        </aside>
+      </section>
+
+      <section class="scorecard-shell" aria-labelledby="assessment-title">
+        <div class="scorecard-form-panel">
+          <div class="scorecard-section-heading">
+            <p class="section-kicker">Assessment</p>
+            <h2 id="assessment-title">Answer based on one real workflow.</h2>
+            <p>
+              Pick the workflow that would cause the most trouble if it behaved incorrectly. Do not enter passwords, API keys, private customer records, or confidential payloads.
+            </p>
+          </div>
+          <form id="risk-scorecard" class="risk-form">
+            <div class="field-grid">
+              <label>
+                Your work email
+                <input id="lead-email" type="email" name="email" placeholder="you@company.com" autocomplete="email">
+              </label>
+              <label>
+                Company or project
+                <input id="lead-company" type="text" name="company" placeholder="Company name" autocomplete="organization">
+              </label>
+              <label class="full-field">
+                Workflow being scored
+                <input id="workflow-name" type="text" name="workflow" placeholder="Example: AI support agent with CRM access">
+              </label>
+            </div>
+
+            <div id="question-list" class="question-list"></div>
+
+            <div class="scorecard-actions">
+              <button class="button button-primary" type="submit">Calculate my risk score</button>
+              <p id="form-error" class="form-error" role="alert"></p>
+            </div>
+          </form>
+        </div>
+
+        <aside id="score-result" class="score-result" aria-live="polite">
+          <p class="section-kicker">Result</p>
+          <h2>Your score will appear here.</h2>
+          <p>
+            The result shows a risk band, the weakest categories, and the next sensible action.
+          </p>
+        </aside>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <span>OctoBot Labs</span>
+        <span>AI workflow security scorecard</span>
+        <span>No legal advice. No security guarantees. Practical review and remediation support.</span>
+      </div>
+    </footer>
+    <script src="./scorecard.js"></script>
+  </body>
+</html>
