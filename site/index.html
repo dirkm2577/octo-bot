@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>AI Workflow Security Audit | OctoBot Labs</title>
+    <meta name="description" content="OctoBot Labs audits AI agents, MCP servers, and automation workflows before they touch real credentials, tools, and customer data.">
+    <meta property="og:title" content="AI Workflow Security Audit | OctoBot Labs">
+    <meta property="og:description" content="A practical audit for AI agents, MCP servers, and automation workflows with real business access.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="./assets/agent-risk-map.svg">
+    <link rel="preload" href="./assets/agent-risk-map.svg" as="image">
+    <link rel="stylesheet" href="./styles.css">
+  </head>
+  <body>
+    <header class="site-header" aria-label="Primary">
+      <a class="brand" href="#top" aria-label="OctoBot Labs home">
+        <span class="brand-mark" aria-hidden="true">O</span>
+        <span>OctoBot Labs</span>
+      </a>
+      <nav class="nav-links" aria-label="Main navigation">
+        <a href="#deliverables">Deliverables</a>
+        <a href="#process">Process</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-visual" aria-hidden="true"></div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+          <p class="eyebrow">For teams using AI agents, MCP servers, n8n, Make, Zapier, or internal LLM workflows</p>
+          <h1 id="hero-title">AI Workflow Security Audit</h1>
+          <p class="hero-copy">
+            We map where your automations touch credentials, tools, approvals, and customer data, then give you a prioritized fix plan before small workflow shortcuts become business risk.
+          </p>
+          <div class="hero-actions" aria-label="Primary actions">
+            <a class="button button-primary" href="mailto:hello@octo-bot.io?subject=AI%20Workflow%20Security%20Audit">Request a mini-audit</a>
+            <a class="button button-secondary" href="#deliverables">View deliverables</a>
+          </div>
+          <ul class="signal-list" aria-label="Audit summary">
+            <li>
+              <span>Scope</span>
+              Agents, workflows, MCP, OAuth, secrets
+            </li>
+            <li>
+              <span>Output</span>
+              Risk map, findings, fix plan
+            </li>
+            <li>
+              <span>Mode</span>
+              Async-first, no sales theater
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="band problem-band" aria-labelledby="problem-title">
+        <div class="section-inner two-column">
+          <div>
+            <p class="section-kicker">Why now</p>
+            <h2 id="problem-title">When automation gets access, the failure mode changes.</h2>
+          </div>
+          <div class="copy-stack">
+            <p>
+              Modern AI workflows can read inboxes, call APIs, summarize private data, update CRMs, draft replies, and trigger business actions. That is useful only when the access model, logging, and human-control points are explicit.
+            </p>
+            <p>
+              OctoBot Labs focuses on the practical layer: what exists today, what can go wrong, and what should be fixed first.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="deliverables" class="section" aria-labelledby="deliverables-title">
+        <div class="section-inner">
+          <div class="section-heading">
+            <p class="section-kicker">Deliverables</p>
+            <h2 id="deliverables-title">A concrete audit, not a vague security lecture.</h2>
+          </div>
+          <div class="deliverable-grid">
+            <article class="deliverable-card">
+              <span class="card-index">01</span>
+              <h3>Workflow inventory</h3>
+              <p>We list the agents, automations, triggers, tools, owners, and systems that matter.</p>
+            </article>
+            <article class="deliverable-card">
+              <span class="card-index">02</span>
+              <h3>Credential review</h3>
+              <p>We check where keys, OAuth tokens, service accounts, and shared secrets are stored and used.</p>
+            </article>
+            <article class="deliverable-card">
+              <span class="card-index">03</span>
+              <h3>Permission map</h3>
+              <p>We identify overbroad scopes, missing approval gates, and write actions that need tighter control.</p>
+            </article>
+            <article class="deliverable-card">
+              <span class="card-index">04</span>
+              <h3>Audit trail review</h3>
+              <p>We verify whether important tool calls, failures, approvals, and changes can be reconstructed later.</p>
+            </article>
+            <article class="deliverable-card">
+              <span class="card-index">05</span>
+              <h3>Risk report</h3>
+              <p>You get findings ranked by impact, likelihood, and effort, with plain-English business context.</p>
+            </article>
+            <article class="deliverable-card">
+              <span class="card-index">06</span>
+              <h3>Fix sprint option</h3>
+              <p>We can help implement the most urgent changes after the audit, without turning it into an endless consulting blob.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="process" class="section muted-section" aria-labelledby="process-title">
+        <div class="section-inner">
+          <div class="section-heading">
+            <p class="section-kicker">Process</p>
+            <h2 id="process-title">Built for busy technical teams and operators.</h2>
+          </div>
+          <ol class="process-list">
+            <li>
+              <span>1</span>
+              <div>
+                <h3>Mini-audit</h3>
+                <p>We review one workflow or MCP surface from sanitized screenshots, configs, or a short walkthrough.</p>
+              </div>
+            </li>
+            <li>
+              <span>2</span>
+              <div>
+                <h3>Paid audit</h3>
+                <p>We inspect the agreed scope, document the risk map, and identify the fixes that matter first.</p>
+              </div>
+            </li>
+            <li>
+              <span>3</span>
+              <div>
+                <h3>Readout</h3>
+                <p>You receive a concise report with findings, decisions, and implementation steps.</p>
+              </div>
+            </li>
+            <li>
+              <span>4</span>
+              <div>
+                <h3>Fix sprint</h3>
+                <p>Optional implementation support for secrets, OAuth, MCP authorization, approval gates, and logging.</p>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <section id="pricing" class="section" aria-labelledby="pricing-title">
+        <div class="section-inner">
+          <div class="section-heading">
+            <p class="section-kicker">Pricing</p>
+            <h2 id="pricing-title">Start narrow. Prove value. Expand only when it makes sense.</h2>
+          </div>
+          <div class="pricing-grid">
+            <article class="price-card">
+              <p class="price-label">Intro pilot</p>
+              <h3>EUR 750</h3>
+              <p>One workflow or agent surface, focused findings, and a prioritized fix list.</p>
+            </article>
+            <article class="price-card highlighted">
+              <p class="price-label">Standard audit</p>
+              <h3>From EUR 1,500</h3>
+              <p>Multiple workflows, credential and permission mapping, audit trail review, and readout.</p>
+            </article>
+            <article class="price-card">
+              <p class="price-label">Retainer</p>
+              <h3>From EUR 250/mo</h3>
+              <p>Lightweight ongoing review for new workflows, changes, and recurring risk checks.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="band fit-band" aria-labelledby="fit-title">
+        <div class="section-inner two-column">
+          <div>
+            <p class="section-kicker">Good fit</p>
+            <h2 id="fit-title">Best for teams that already automate real work.</h2>
+          </div>
+          <div class="fit-lists">
+            <div>
+              <h3>We should talk if</h3>
+              <ul>
+                <li>AI workflows touch business email, customer records, invoices, or production APIs.</li>
+                <li>You are shipping an MCP server or giving agents tool access.</li>
+                <li>You need a practical fix plan before customers, auditors, or partners ask.</li>
+              </ul>
+            </div>
+            <div>
+              <h3>Not a fit if</h3>
+              <ul>
+                <li>You only need generic AI strategy slides.</li>
+                <li>You want autonomous actions without human control points.</li>
+                <li>You are looking for legal certification or a compliance guarantee.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section contact-section" aria-labelledby="contact-title">
+        <div class="section-inner contact-inner">
+          <p class="section-kicker">Start</p>
+          <h2 id="contact-title">Send one workflow. We will tell you where the risk is.</h2>
+          <p>
+            For the first review, send a short description of the workflow, the tools it can call, and whether it can read or write sensitive data. Do not send passwords, API keys, or private customer data.
+          </p>
+          <a class="button button-primary" href="mailto:hello@octo-bot.io?subject=AI%20Workflow%20Security%20Audit&body=Hi%20OctoBot%20Labs%2C%0A%0AWe%20use%20AI%20or%20automation%20for%3A%0A%0ATools%20involved%3A%0A%0AThe%20workflow%20can%20read%2Fwrite%3A%0A%0AWhat%20we%20are%20worried%20about%3A%0A">Request a mini-audit</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <span>OctoBot Labs</span>
+        <span>AI automation safety and implementation</span>
+        <span>No legal advice. No security guarantees. Practical review and remediation support.</span>
+      </div>
+    </footer>
+  </body>
+</html>
