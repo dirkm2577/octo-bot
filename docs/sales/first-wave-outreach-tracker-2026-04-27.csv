@@ -1,0 +1,11 @@
+rank,company,segment,send_date,channel,contact_path,subject,copy_variant,status,reply_date,scorecard_completed,score_band,asked_for_feedback,asked_for_mini_audit,next_action,notes
+1,AOE Group,n8n partner,2026-04-27,contact form or partner contact,https://experts.n8n.io/partner/aoe-group,does this catch the right AI workflow risks?,Email Variant B,ready_to_send,,,,,,,
+2,relyon AG,n8n partner,2026-04-27,contact form or partner contact,https://experts.n8n.io/partner/relyon-ag,does this catch the right AI workflow risks?,Email Variant B,ready_to_send,,,,,,,
+3,cimt,n8n partner,2026-04-27,contact form or partner contact,https://experts.n8n.io/partner/cimt,does this catch the right AI workflow risks?,Email Variant B or German Variant,ready_to_send,,,,,,,
+4,FastRocket GmbH,n8n partner,2026-04-27,contact form or partner contact,https://experts.n8n.io/partner/fastrocket-gmbh,quick AI workflow risk score,Email Variant A or German Variant,ready_to_send,,,,,,,
+5,TrueHorizon AI,n8n partner,2026-04-27,contact form or partner contact,https://experts.n8n.io/partner/truehorizon-ai,quick AI workflow risk score,Email Variant A,ready_to_send,,,,,,,
+6,N8N Lab,automation agency,2026-04-28,contact form or public website,https://n8nlab.io/services,quick AI workflow risk score,Email Variant A,ready_to_send,,,,,,,
+7,SynkrAI,automation agency,2026-04-28,contact form or public website,https://www.synkrai.com,quick AI workflow risk score,Email Variant A,ready_to_send,,,,,,,
+8,The Automation Partner,Make partner,2026-04-28,contact form or partner contact,https://www.make.com/en/partners-directory/the-automation-partner,quick AI workflow risk score,Email Variant A,ready_to_send,,,,,,,
+9,Composio,MCP/agent tooling,2026-04-28,contact form or public website,https://composio.dev,scorecard for agent tool-access risk,Email Variant C,ready_to_send,,,,,,,
+10,Arcade.dev,MCP/agent tooling,2026-04-28,contact form or public website,https://www.arcade.dev,scorecard for agent tool-access risk,Email Variant C,ready_to_send,,,,,,,
