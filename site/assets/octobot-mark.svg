@@ -1,18 +1,21 @@
 <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
   <title id="title">OctoBot Labs mark</title>
-  <desc id="desc">A compact OctoBot Labs symbol with connected nodes around a protected center.</desc>
+  <desc id="desc">A clean modern octopus symbol with a small bot face.</desc>
   <rect x="4" y="4" width="56" height="56" rx="16" fill="#0A4C45"/>
-  <path d="M32 16V9" stroke="#F1C86B" stroke-width="4" stroke-linecap="round"/>
-  <path d="M32 55V48" stroke="#F1C86B" stroke-width="4" stroke-linecap="round"/>
-  <path d="M48 32H55" stroke="#F1C86B" stroke-width="4" stroke-linecap="round"/>
-  <path d="M9 32H16" stroke="#F1C86B" stroke-width="4" stroke-linecap="round"/>
-  <path d="M43.3 20.7L48.3 15.7" stroke="#F1C86B" stroke-width="4" stroke-linecap="round"/>
-  <path d="M15.7 48.3L20.7 43.3" stroke="#F1C86B" stroke-width="4" stroke-linecap="round"/>
-  <path d="M43.3 43.3L48.3 48.3" stroke="#F1C86B" stroke-width="4" stroke-linecap="round"/>
-  <path d="M15.7 15.7L20.7 20.7" stroke="#F1C86B" stroke-width="4" stroke-linecap="round"/>
-  <circle cx="32" cy="32" r="17" fill="#F9FBF8"/>
-  <circle cx="32" cy="32" r="10" fill="#172422"/>
-  <circle cx="28" cy="29" r="2.2" fill="#F9FBF8"/>
-  <circle cx="36" cy="29" r="2.2" fill="#F9FBF8"/>
-  <path d="M27.5 36C30 38 34 38 36.5 36" stroke="#F1C86B" stroke-width="3" stroke-linecap="round"/>
+  <g stroke="#F1C86B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M21.5 36.5C16.5 38.2 14 42 16.4 45.3"/>
+    <path d="M24.8 39.2C20.8 42.7 20.4 47.6 24.5 50"/>
+    <path d="M29.2 40.5C26.8 44.7 27.5 49.4 31.2 51"/>
+    <path d="M34.8 40.5C37.2 44.7 36.5 49.4 32.8 51"/>
+    <path d="M39.2 39.2C43.2 42.7 43.6 47.6 39.5 50"/>
+    <path d="M42.5 36.5C47.5 38.2 50 42 47.6 45.3"/>
+    <path d="M19 31.5C14.4 31.8 12.1 35.3 14.2 38"/>
+    <path d="M45 31.5C49.6 31.8 51.9 35.3 49.8 38"/>
+  </g>
+  <path d="M32 12C22.2 12 16.8 19.4 16.8 28.2C16.8 36.9 22.9 41.4 27.6 42.3C29 39.8 31 39.7 32 42.7C33 39.7 35 39.8 36.4 42.3C41.1 41.4 47.2 36.9 47.2 28.2C47.2 19.4 41.8 12 32 12Z" fill="#F9FBF8"/>
+  <path d="M22.8 30.5C24.1 25.6 27.5 22.7 32 22.7C36.5 22.7 39.9 25.6 41.2 30.5C40 34.7 36.6 37.6 32 37.6C27.4 37.6 24 34.7 22.8 30.5Z" fill="#172422"/>
+  <circle cx="27.7" cy="30.3" r="2.1" fill="#F9FBF8"/>
+  <circle cx="36.3" cy="30.3" r="2.1" fill="#F9FBF8"/>
+  <path d="M28.5 35C30.6 36.8 33.4 36.8 35.5 35" stroke="#F1C86B" stroke-width="2.6" stroke-linecap="round"/>
+  <path d="M26.8 18.8C29.8 17.5 34.2 17.5 37.2 18.8" stroke="#0A4C45" stroke-width="2.6" stroke-linecap="round"/>
 </svg>
