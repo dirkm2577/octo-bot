@@ -1,6 +1,6 @@
 # Email Deliverability Checklist
 
-Date checked: 2026-04-26
+Date checked: 2026-04-27
 
 Domain: `octo-bot.io`
 
@@ -28,23 +28,35 @@ v=DMARC1; p=quarantine; adkim=r; aspf=r; rua=mailto:dmarc_rua@onsecureserver.net
 DKIM:
 
 ```text
-No selector1._domainkey or selector2._domainkey records found.
+No selector1._domainkey or selector2._domainkey records found by DNS lookup.
+However, the Gmail test header reported Microsoft-side DKIM pass for header.d=octo-bot.io.
 ```
 
-## Main Risk
+Gmail test header:
 
-The domain appears to receive mail through Microsoft 365 / Exchange Online because the MX record points to `mail.protection.outlook.com`.
+```text
+Received from FR4P281CU032.outbound.protection.outlook.com
+Received-SPF: pass
+Authentication-Results: mx.google.com; spf=pass; dmarc=pass
+ARC-Authentication-Results: i=1; mx.microsoft.com; spf=pass; dmarc=pass; dkim=pass header.d=octo-bot.io
+```
 
-The SPF record currently authorizes `secureserver.net`, not `spf.protection.outlook.com`.
+## Interpretation
 
-If outbound mail from `hello@octo-bot.io` is sent through Microsoft 365 / Outlook, this mismatch may reduce deliverability, especially because DMARC is already set to `p=quarantine` and no DKIM records were found.
+The sending provider is Microsoft 365 / Exchange Online. The header shows outbound mail passing through `outbound.protection.outlook.com` and `PROD.OUTLOOK.COM`.
+
+SPF is currently acceptable for Microsoft sending because `include:secureserver.net` expands through GoDaddy's SPF chain to include `spf.protection.outlook.com`.
+
+The test email passed SPF and DMARC at Gmail. Microsoft also reported DKIM pass for `octo-bot.io`. This is good enough for the first low-volume outreach batch.
+
+The visible `arc=fail` at Gmail is not the main deliverability signal here. ARC is an optional forwarded-message authentication chain. SPF and DMARC passed, and Microsoft reported DKIM pass.
 
 ## What To Check Before Sending Outreach
 
-1. Confirm the sending provider for `hello@octo-bot.io`.
-   - If sending from Microsoft 365 / Outlook, the SPF record should usually include `include:spf.protection.outlook.com`.
-   - If sending from GoDaddy Professional Email / Workspace Email, follow GoDaddy's SPF instructions.
-   - Do not create multiple SPF TXT records. There should be one SPF record only.
+1. Confirm the exact sender address.
+   - The test screenshot used `support@octo-bot.io`.
+   - Send one test from `hello@octo-bot.io` too if that is the address used for outreach.
+   - If both are aliases on the same Microsoft tenant, the result should be the same.
 
 2. Enable DKIM for the custom domain if the mail provider supports it.
    - Microsoft 365 custom domain DKIM generally uses two CNAME records:
@@ -61,15 +73,15 @@ If outbound mail from `hello@octo-bot.io` is sent through Microsoft 365 / Outloo
    - Send 5 emails on April 27, 2026.
    - Wait for bounces or spam-folder issues before sending the next 5.
 
-## Suggested SPF If Sending Through Microsoft 365 Only
+## Optional SPF Simplification
 
-Use this only if `hello@octo-bot.io` sends through Microsoft 365 / Outlook:
+The current SPF passes the Gmail test. If the domain sends only through Microsoft 365, SPF could later be simplified to:
 
 ```text
 v=spf1 include:spf.protection.outlook.com -all
 ```
 
-If both Microsoft 365 and another provider legitimately send mail for this domain, combine the valid senders into one SPF record, for example:
+If both Microsoft 365 and another provider legitimately send mail for this domain, keep all valid senders in one SPF record, for example:
 
 ```text
 v=spf1 include:spf.protection.outlook.com include:secureserver.net -all
