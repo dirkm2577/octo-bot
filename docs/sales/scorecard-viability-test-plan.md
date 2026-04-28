@@ -8,7 +8,7 @@ Validate whether the market responds to a practical AI workflow risk diagnostic 
 
 - Public scorecard: `https://octo-bot.io/scorecard.html`
 - Primary CTA: request a mini-audit after receiving a score
-- Follow-up offer: EUR 750 focused pilot audit
+- Follow-up offer: EUR 750-1,200 paid mini-audit
 
 ## Target Segments
 
@@ -40,7 +40,7 @@ Any one of these is enough to keep going:
 - 20+ scorecard visits from 100 targeted prospects
 - 5+ people reply with a score or ask for feedback
 - 3+ mini-audit requests
-- 1 paid EUR 750 pilot
+- 1 paid mini-audit
 
 ## Weak Signals
 

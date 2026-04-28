@@ -56,7 +56,7 @@ Subject: Re: Mini-audit
 
 Hi {{company_or_team}},
 
-Happy to do a first lightweight review.
+Happy to do a first lightweight paid review.
 
 Please send a sanitized workflow outline, not secrets or customer data:
 
@@ -69,7 +69,7 @@ Please send a sanitized workflow outline, not secrets or customer data:
 - Logging / audit trail:
 - What you are most worried about:
 
-We will reply with the top risks we see and the first fixes we would prioritize.
+The AI Workflow Mini-Audit is EUR 750-1,200 depending on scope. We will send back a concise report with the top risks, evidence, and the first fixes we would prioritize.
 
 OctoBot Labs
 
@@ -79,7 +79,7 @@ Subject: Re: Audit scope
 
 Hi {{company_or_team}},
 
-The focused pilot audit is EUR 750 for one workflow or agent surface.
+The AI Workflow Mini-Audit is EUR 750-1,200 for one workflow or agent surface.
 
 Typical deliverables:
 
@@ -116,4 +116,3 @@ Hi {{company_or_team}},
 Understood. I will close the loop here.
 
 OctoBot Labs
-

@@ -1,6 +1,6 @@
 # AI Workflow Security Audit Checklist
 
-This checklist defines the first paid OctoBot Labs service.
+This checklist defines the first paid OctoBot Labs service. Use it for the mini-audit, the standard audit, and monthly monitoring. AI may draft evidence summaries, but the final rating is human-owned.
 
 ## Scope
 
@@ -96,3 +96,10 @@ Each finding must include:
 - Fix-now items separated from fix-later items
 - No legal or compliance guarantee implied
 - Follow-up implementation scope proposed only when useful
+
+## 10. AI Assistance Rules
+
+- AI may summarize sanitized workflow material.
+- AI may draft inventory tables, report sections, and remediation tickets.
+- AI must not receive client secrets, API keys, private customer payloads, or unnecessary personal data.
+- Human reviewer must approve severity, business impact, legal/compliance boundary wording, and final recommendations.

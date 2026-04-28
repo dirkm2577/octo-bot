@@ -2,7 +2,7 @@
 
 ## Positioning
 
-OctoBot Labs helps teams review AI agents and automation workflows before they touch real credentials, tools, and customer data.
+OctoBot Labs helps teams review AI agents and automation workflows before they touch real credentials, tools, and customer data. The funnel is free scorecard first, paid mini-audit second.
 
 ## First Target Segments
 
@@ -30,9 +30,9 @@ We saw {{specific_signal}} and had a practical question:
 
 Do any of your AI workflows or agents touch production credentials, customer data, or write-capable tools?
 
-OctoBot Labs is doing a small number of free mini-audits for teams shipping AI automations. We look for the boring-but-important gaps: overbroad scopes, exposed secrets, missing approval gates, and weak audit trails.
+OctoBot Labs built a short scorecard for teams shipping AI automations. It looks for the boring-but-important gaps: overbroad scopes, exposed secrets, missing approval gates, and weak audit trails.
 
-No pitch deck. Send one workflow description or sanitized screenshot, and we will send back the top risks we see.
+No pitch deck. Score one workflow in the browser. If the risk band looks real, we can follow up with a paid mini-audit.
 
 Useful?
 
@@ -46,7 +46,7 @@ Hi {{first_name}},
 
 Tiny follow-up. The review is most useful when an automation can read or write something real: Gmail, Slack, CRM, invoices, payments, tickets, or an internal API.
 
-If you send one workflow outline, we will flag the first few risk points and the fixes we would prioritize.
+If you send the score band and a sanitized workflow outline, we will flag the first few risk points and the fixes we would prioritize.
 
 Best,
 OctoBot Labs
@@ -66,7 +66,7 @@ OctoBot Labs
 
 ## LinkedIn Or Community DM
 
-Saw your work on {{specific_signal}}. OctoBot Labs is reviewing AI automations for teams that are starting to give agents real tool access. The checks are practical: credentials, scopes, approvals, logs, and recovery. Happy to do one mini-audit if you want a second set of eyes.
+Saw your work on {{specific_signal}}. OctoBot Labs is reviewing AI automations for teams that are starting to give agents real tool access. The checks are practical: credentials, scopes, approvals, logs, and recovery. The free first step is a 3-minute scorecard; the paid next step is a focused mini-audit if the risk is worth inspecting.
 
 ## Qualification Questions
 
@@ -80,7 +80,7 @@ Saw your work on {{specific_signal}}. OctoBot Labs is reviewing AI automations f
 
 ## Paid Pilot Close
 
-Based on the mini-audit, the useful next step would be a focused paid audit.
+Based on the scorecard and workflow outline, the useful next step would be a focused paid mini-audit.
 
 Scope:
 
@@ -88,6 +88,6 @@ Scope:
 - Map credentials, permissions, approval points, and logs
 - Deliver ranked findings and a fix plan
 
-Pilot price: EUR 750
+Pilot price: EUR 750-1,200
 
 Timeline: 5 business days after access/materials
